@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxwell's Biography</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #8B0000;
+        }
+        header, footer, aside {
+            position: fixed;
+            background-color: #8B0000;
+            z-index: 1000;
+        }
+        header {
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 90px;
+            text-align: center;
+            line-height: 60px;
+            font-weight: bold;
+            font-size: 2.5em;
+            color: #fff;
+            justify-content: space-between;
+            display: flex;
+            margin-left: 40px;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 40px;
+            font-size: 25px;
+        }
+        footer {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+        }
+        aside {
+            top: 90px;
+            bottom: 40px;
+            left: 0;
+            width: 25%;
+            overflow-y: auto;
+            padding: 10px;
+            color: #fff;
+        }
+        .card-body {
+            background-color: #8B0000;
+        }
+        main {
+            position: fixed;
+            top: 100px;
+            bottom: 40px;
+            left: 25%;
+            right: 0;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #8B0000;
+            text-align: justify;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Maxwell's Biography
+            <a href="index.html">Home</a>
+    </header>
+    <!-- Sidebar -->
+    <aside>
+        <h5>Maxwell's Moments</h5>
+        <!-- Bootstrap Cards -->
+        <div class="card mb-3">
+            <img src="pic/max1.jpg" class="card-img-top" alt="Maxwell sleeping">
+            <div class="card-body">
+                <p class="card-text">Maxwell's favorite blanket.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img src="pic/max2.jpg" class="card-img-top" alt="Maxwell playing">
+            <div class="card-body">
+                <p class="card-text">Maxwell's favorite box.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img src="pic/max3.jpg" class="card-img-top" alt="Maxwell cuddling">
+            <div class="card-body">
+                <p class="card-text">Maxwell's favorite chair.</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <h3>About Maxwell</h3>
+        <p>
+            Maxwell was my first cat, and he was the runt of his litter. He also had some complications
+            with a surgery, and that meant he had to wait to be adopted, so he was very lonely before I
+            came to get him – his whole litter had gone! However, because of that, he was extremely
+            affectionate and clingy. He was also a very large cat, so when he sat on my lap it didn’t
+            take long for my legs to fall asleep.
+        </p>
+        <p>
+            I adopted Mona when he was about a year and a half old, and they initially didn’t get along,
+            but they did eventually grow to like each other. They would often lay together and he would
+            groom Mona until she got cranky about it. Very funny to watch!
+        </p>
+        <p>
+            Unfortunately, I had to say goodbye to Maxwell way sooner than I would have liked – it
+            turns out, he was born with only one kidney (among other issues, like the one mentioned
+            when he was young), and he got a kidney infection. We were able to treat it, but it returned
+            several months later, and the vet said there was no way he would make it. He was only 6
+            years old. He is missed greatly, but he left a big impact on everyone’s lives, and lived his
+            best and was well taken care of!
+        </p>
+
+        <!-- Bootstrap Carousel -->
+        <div id="maxwellCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pic/maxmain1.jpg" class="d-block w-100" alt="Maxwell Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="pic/maxmain2.jpg" class="d-block w-100" alt="Maxwell Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="pic/maxmain3.jpg" class="d-block w-100" alt="Maxwell Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#maxwellCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#maxwellCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        Made by Mary Rinda Renjith | Images supplied by Travis Cattington
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

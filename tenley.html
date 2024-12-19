@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Tenley</title>
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css code -->
+    <link rel="stylesheet" href="css/Tenley.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-white text-center p-3 fixed-top">
+        <h4>About Tenley</h4>
+        <div class="navigation">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Back to home</a></li>
+                <li class="list-inline-item"><a href="mona.html">Mona</a></li>
+                <li class="list-inline-item"><a href="maxwellbiography.html">Maxwell</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content Layout with Sidebar and Content Section -->
+    <div class="container-fluid mt-5 pt-5"> <!-- Added pt-5 for spacing due to fixed navbar -->
+        <div class="row">
+            <!-- Sidebar (Stacks vertically on mobile) -->
+            <aside class="col-12 col-md-4 sidebar">
+                <div class="card mb-3">
+                    <img src="pic/tenley4.jpg" class="card-img-top" alt="Tenley playing">
+                    <div class="card-body">
+                        <p class="card-text">Tenley lies upside down, paws curled, looking adorably playful and curious, as if inviting someone to join the fun with the toy nearby..</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <img src="pic/tenley6.jpg" class="card-img-top" alt="Tenley napping">
+                    <div class="card-body">
+                        <p class="card-text">Tenley’s fur pattern is beautifully detailed and appears relaxed and focused..</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <img src="pic/tenley12.jpg" class="card-img-top" alt="Tenley exploring">
+                    <div class="card-body">
+                        <p class="card-text">Tanley is comfortably lying on the bed and partially tucked under a grey blanket. It suggests that Tanley has claimed this spot as the perfect place to rest.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content (Stacks vertically on mobile) -->
+            <main class="col-12 col-md-8 main-content">
+                <h2>About Tenley</h2>
+                <p>Tenley is the cat most recently adopted into my home, and she was about a year old when I got her. She’s around 4 years old now – the time sure does fly. After I lost Maxwell, I volunteered at the local animal shelter to help all the kitties who didn’t have a home, and every morning when I walked into that room, she came up to me and was super affectionate and interested. I knew immediately: I would adopt this cat!</p>
+                <p>She took no time to get adjusted to my home, and is one of the sweetest cats I’ve ever met. She loves to cuddle and be petted, and never runs out of energy. Her favorite thing to do is carry her fishing rod around at 3 AM and meow looking for attention. Her and Mona don’t get along extremely well, in part because of a clash of personalities.</p>
+
+                <!-- Bootstrap Carousel -->
+                <div id="tenleyCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pic/tenley1.jpg" class="d-block w-100" alt="Tenley playing">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pic/tenley2.jpg" class="d-block w-100" alt="Tenley napping">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pic/tenley3.jpg" class="d-block w-100" alt="Tenley exploring">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tenleyCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tenleyCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>Page was made by Nikita, and images are supplied by Travis Cattington</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

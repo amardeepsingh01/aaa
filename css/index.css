@@ -1,0 +1,89 @@
+.navigation ul {
+    display: flex;
+    justify-content:center;
+    padding: 0; /* Remove extra spacing if present */
+    margin: 0;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    margin: 0 10px; /* Add spacing between navigation items */
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block; /* Ensures padding is clickable */
+}
+
+.container-fluid{
+    margin-top: 120px; /* Adjust to avoid header overlap */
+    padding: 20px; /* Optional for spacing */
+}
+
+.sidebar {
+    position: fixed;
+    top: 120px; /* Adjust to match the header height */
+    width: 300px; /* Set a consistent width */
+    height: calc(100% - 120px); /* Prevent it from overflowing */
+    overflow-y: auto; /* Enable scrolling if content is long */
+    padding-bottom: 100px;
+}
+
+
+
+.main-content {
+    margin-left: 360px; /* Match sidebar width */
+     padding: 0px;
+     
+    
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #6c757d; /* Matches your existing bg-secondary color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+section p{
+    text-align:justify;
+    padding:13px;
+    line-height:2;
+}
+
+
+
+.blog-posts ul  li {
+    list-style-type: none;
+    padding:10px;
+}
+.blog-posts ul li a{
+    text-decoration:none;
+    
+    
+}
+#poll-results {
+    border-radius: 20px; /* Adjusted for a more visible effect */
+    background-color: lightgray; /* Ensure the background makes it noticeable */
+    padding: 10px; /* Add inner spacing for aesthetics */
+    text-align: center;
+    margin: 0 auto; /* Center the element if needed */
+    width: 100%; /* Retain existing width */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}

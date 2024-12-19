@@ -1,0 +1,106 @@
+/* Reset Navigation */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in element width/height */
+}
+
+/* Navigation Styles */
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 1px;
+  display: inline-block;
+}
+
+header {
+  background-color: #6F4F37;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed; /* Sidebar sticks while scrolling */
+  top: 15%; /* Space below the fixed header */
+  width: 300px;
+  height: calc(100vh - 130px); /* Full viewport height minus header and margin */
+  padding: 20px;
+  background-color: #f8f9fa; /* Light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+  overflow-y: auto; /* Enable vertical scroll when content overflows */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Styling */
+h2 {
+  color: #6F4F37; /* Brown color */
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 350px; /* Push main content beside the sidebar for large screens */
+  padding: 20px;
+  max-width: 1100px; /* Maximum width for main content */
+  margin-top: 10px;
+  overflow-wrap: break-word; /* Ensures long text breaks into new lines */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.main-content p {
+  margin: 0;
+  text-align: justify;
+  width:1100px;
+}
+
+/* Carousel Container */
+#tenleyCarousel {
+  width: 100%; /* Ensures the carousel takes up full width of its container */
+  margin: 0 auto; /* Centers the carousel */
+  width: 1100px; /* Keep the carousel width consistent with main content */
+}
+
+/* Carousel Images */
+.carousel-item img { /* Ensures the images scale to the width of the carousel */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px;
+ /* Optional: Adds rounded corners to the images */
+}
+
+/* Footer Styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #6F4F37;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      position: relative;
+  }
+  .main-content {
+      margin-left: 0;
+      padding: 10px;
+  }
+  #tenleyCarousel {
+      max-width: 100%; /* Ensure the carousel resizes to the screen width */
+  }
+}
